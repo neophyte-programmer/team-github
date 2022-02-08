@@ -1,1 +1,155 @@
-Bentil
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | No CSS</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        section.main{
+            width: 60%;
+            /* min-height: 70% !important; */
+            margin: auto;
+            margin-top: 5%;
+            padding: 1%;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.336);
+            display: flex;
+            justify-content: space-between;
+        }
+        .main .img-field{
+            background: rgba(0, 0, 255);
+            min-height: 100%;
+            width: 40%;
+            border: none;
+            border-radius: 5px;
+        }
+        .main .img-field h5{
+            color: #fff;
+            font-weight: bolder;
+        }
+        .main .form{
+            width: 60%;
+            /* border: 1px solid #f00; */
+            /* border: none; */
+            border-radius: 5px;
+            padding: 0% 1% 1% 1%;
+        }
+        .main .form .title{
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+            color: #00f;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+        .main .form .title p{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .main .form .form-input .input{
+            margin: 4% auto;
+            width: 90%;
+            border: 1px solid #00f;
+            border-radius: 25px;
+            padding: 3% 2%;
+        }
+        .main .form .form-input .input input{
+            width: 85%;
+            border: none;
+            padding-left: 5%;
+            color: #00f;
+            font-weight: bold;
+        }
+        /* .main .form .form-input .input #u-password{
+            border: 1px solid #f00;
+            width: 80%;
+            margin-bottom: 2% !important;
+        } */
+        .main .form .form-input .input input:focus,
+        .main .form .form-input .input button:focus{
+            outline: none;
+        }
+        .main .form .form-input .input button,
+        .main .form .form-input .input .button
+        {
+            border: none;
+            cursor: pointer;
+            background: none;
+            display: block;
+            width: 100%;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .main .form .form-input .input.btn{
+            cursor: pointer;
+            background: rgb(0, 0, 255);
+            border: 1px solid #00f;
+        }
+        .main .form .form-input .input.signup{
+            cursor: pointer;
+            background: rgb(255, 0, 0);
+            border: 1px solid #f00;
+        }
+        .main .form .form-input .input.btn:hover{
+            background: rgb(23, 23, 199);
+            border: 1px solid #00f;
+        }
+        .main .form .form-input .input.signup:hover{
+            background: rgb(199, 23, 23);
+            border: 1px solid #f00;
+        }
+        .forgot a{
+            color: #00f;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="img-field">
+            <center><h5>Brand Bentilzone</h5></center>
+        </div>
+        <div class="form">
+            <center>
+                <div class="title">
+                    <p>Sign Up Here</p>
+                </div>
+                <form class="form-input" autocomplete="off">
+                    <div class="input">
+                        <input type="text" name="u-name" id="u-name" placeholder="Username" minlength="5" maxlength="25" required>
+                    </div>
+                    <div class="input">
+                        <input type="email" name="u-email" id="u-email" placeholder="Email" required>
+                    </div>
+                    <div class="input">
+                        <input type="password" name="u-password" id="u-password" placeholder="Password" minlength="8" required>
+                        <!-- <span id="eye">&#x1F441;</span> -->
+                    </div>
+                    <div class="input">
+                        <input type="password" name="u-password" id="u-password" placeholder="Confirm password" minlength="8" required>
+                        <!-- <span id="eye">&#x1F441;</span> -->
+                    </div>
+                    <div class="input btn">
+                        <button>Sign Up</button>
+                    </div>
+                    <div class="forgot">
+                        <a  disabled>Already have an account?</a>
+                    </div>
+                    <div class="input btn signup">
+                        <a href="login.html" class="button">Sign In</a>
+                    </div>
+                </form>
+            </center>
+        </div>
+    </section>
+</body>
+</html>
